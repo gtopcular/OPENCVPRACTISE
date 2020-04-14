@@ -1,7 +1,7 @@
 from cv2 import cv2 
 import numpy as np
 
-img = cv2.imread(".\\sources\\helikopter.jpg")
+img = cv2.imread("./sources/helikopter.jpg")
 
 
 kernel2= np.array([[1,0,5],[5,0,5],[7,2,3]],np.uint8)

@@ -1,8 +1,8 @@
 from cv2 import cv2
 import numpy as np 
 
-img1 = cv2.imread(".\\sources\\bitwise-1.png")
-img2 = cv2.imread(".\\sources\\bitwise-2.png")
+img1 = cv2.imread("./sources/bitwise-1.png")
+img2 = cv2.imread("./sources/bitwise-2.png")
 
 bit_and = cv2.bitwise_and(img2,img1)
 bit_or = cv2.bitwise_or(img2,img1)

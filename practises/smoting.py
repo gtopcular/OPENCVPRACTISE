@@ -1,9 +1,9 @@
 from cv2 import cv2
 import numpy as np
 
-img_filter = cv2.imread(".\\sources\\sfilter.png")
-img_median = cv2.imread(".\\sources\\median.png")
-img_bilateral = cv2.imread(".\\sources\\bilateral.png")
+img_filter = cv2.imread("./sources/sfilter.png")
+img_median = cv2.imread("./sources/median.png")
+img_bilateral = cv2.imread("./sources/bilateral.png")
 
 blur =cv2.blur(img_filter,(5,5))
 blur_g=cv2.GaussianBlur(img_filter,(5,5),cv2.BORDER_DEFAULT)

@@ -1,7 +1,7 @@
 from cv2 import cv2
 import numpy as np
 
-img = cv2.imread(".\\sources\\helikopter.jpg",0)
+img = cv2.imread("./sources/helikopter.jpg",0)
 
 row,col = img.shape
 

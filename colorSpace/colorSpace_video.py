@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 
-vid = cv2.VideoCapture(".\\sources\\traffic.avi")
+vid = cv2.VideoCapture("./sources/traffic.avi")
 
 while 1:
     _,frame = vid.read()

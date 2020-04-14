@@ -1,8 +1,8 @@
 import cv2
 
-yVid = cv2.VideoCapture(".\\sources\\sokak.mp4")
+yVid = cv2.VideoCapture("./sources/sokak.mp4")
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-cikti = cv2.VideoWriter(".\\outputs\\yenisokak.mp4",fourcc,20.0,(640,480))
+cikti = cv2.VideoWriter("./outputs/yenisokak.mp4",fourcc,20.0,(640,480))
 
 while(True):
    deger,kare= yVid.read()

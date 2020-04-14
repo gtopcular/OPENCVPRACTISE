@@ -1,6 +1,6 @@
 import cv2
 
-img =cv2.imread(".\\sources\\helikopter.jpg',0)
+img =cv2.imread("./sources/helikopter.jpg',0)
 cv2.imshow('helikopter.jpg',img)
 
 
