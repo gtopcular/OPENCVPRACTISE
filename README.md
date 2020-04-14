@@ -1,3 +1,14 @@
-# OPENCVPRACTISE
+# OpenCVPractises
 
-BURADAKI CALISMALAR OPENCV ILE YAPILAN ANTREMANLARI ICERIR.
+This repository has personal tryouts for OpenCV.
+
+## Req
+
+Python 3
+
+Numpy
+
+OpenCV
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
