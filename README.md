@@ -15,7 +15,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Attention
 
-if you using a Windows please change file path.
+if you are using a Windows,please change file path.
 
 
 
