@@ -1,0 +1,29 @@
+from cv2 import cv2
+import numpy as np 
+
+img = cv2.imread("./sources/star.png")
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+_,thresh = cv2.threshold(gray,127,255,0)
+
+
+
+contours,_ = cv2.findContours(thresh,2,1)
+
+cnt = contours[0]
+hull = cv2.convexHull(cnt,returnPoints= False)
+
+defects = cv2.convexityDefects(contours[0],hull)
+
+for i in range(defects.shape[0]):
+    s,e,f,d = defects[i,0] # start point ,end point ,furthest point , distance
+    start = tuple(cnt[s][0])
+    end = tuple(cnt[s][0])
+    far = tuple(cnt[s][0])
+
+    cv2.line(img,start,end,[0,255,0],2)
+    cv2.circle(img,far,5,[0,255,0],-1)
+
+cv2.imshow("img",img)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
